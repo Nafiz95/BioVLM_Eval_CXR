@@ -51,9 +51,9 @@ Interpretability is enhanced through **Grad-CAM** visualizations, which are vali
 
 | Setting     | Inter-class Dist. ↑ | Intra-class Dist. ↓ | Ratio ↑ | F1 Score ↑ | Exact Match ↑ | LRAP ↑ | Coverage Error ↓ | Time (min) ↓ |
 |-------------|----------------------|-----------------------|----------|-------------|----------------|----------|---------------------|----------------|
-| *zs*        | 31.890               | 🔴 21.160             | 🔴 1.506 | 🔴 0.105    | 🔴 0.000       | 🔴 0.250 | 🔴 7.70             | —              |
-| *ft*        | 🔴 22.754            | 🔵 12.756             | 🔵 1.784 | 🔵 0.235    | 0.134          | 🔵 0.779 | 🔵 2.750            | 🔴 15.47        |
-| *lp*        | 🔵 31.894            | 21.160               | 1.507    | 0.183       | 🔵 0.143       | 0.741    | 3.077               | 6.10           |
+| *zs*        | 31               | 🔴21             | 🔴 1.5 | 🔴 0.1    | 🔴 0       | 🔴0.3 | 🔴7.7             | —              |
+| *ft*        | 🔴23          | 🔵13             | 🔵1.8 | 🔵0.2    | 0.1          | 🔵0.8 | 🔵2.6            | 🔴15        |
+| *lp*        | 🔵32            | 21               | 1.5    | 0.2       | 🔵0.1       | 0.7    | 3.1               | 🔵6.1           |
 
 Grad-CAM results reveal differences in attention localization across the three modes, further aiding in interpretability.
 
