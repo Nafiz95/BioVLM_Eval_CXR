@@ -60,28 +60,10 @@ Grad-CAM results reveal differences in attention localization across the three m
 ---
 
 ## 📷 Visualization Examples
-
-- ✅ Visual heatmaps using **Grad-CAM**
-- 📌 Layer-wise attention comparisons
-- 🔍 Side-by-side with radiologist annotations
+![Grad-CAM Visualization](https://github.com/Nafiz95/BioVLM_Eval_CXR/blob/main/reduced_gradCXR.png)
 
 ---
 
-## 📁 Repository Structure
-
-```bash
-📦 Interpreting-BiomedCLIP/
-├── data/                    # IU-Xray dataset setup
-├── models/                  # BiomedCLIP loading & config
-├── experiments/
-│   ├── zero_shot/
-│   ├── linear_probe/
-│   └── fine_tune/
-├── visualizations/         # Grad-CAM outputs and scripts
-├── notebooks/              # Jupyter notebooks for analysis
-├── requirements.txt
-└── README.md
-```
 
 ---
 
@@ -92,25 +74,15 @@ Grad-CAM results reveal differences in attention localization across the three m
 git clone https://github.com/yourusername/Interpreting-BiomedCLIP.git
 cd Interpreting-BiomedCLIP
 
-# Install dependencies
-pip install -r requirements.txt
+# Run the ipynb code: Very Easy!
+evaluatingBiomedClIP_IUXRAY.ipynb
 ```
 
 ---
 
 ## 📢 Citation
 
-If you use this work or the codebase, please cite:
-
-```bibtex
-@misc{yourbib2025,
-  title={Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions: An Insight into BiomedCLIP on Radiology},
-  author={Your Name et al.},
-  year={2025},
-  note={Work in progress},
-}
-```
-
+Coming Soon On ArXiv
 ---
 
 ## 👩‍⚕️ Why This Matters
@@ -124,4 +96,4 @@ This work bridges **computer science** and **clinical relevance** by:
 
 ## 📬 Contact
 
-Have questions or feedback? Reach out to: **your.email@domain.com**
+Have questions or feedback? Reach out to: **sadman.n@queensu.ca**
