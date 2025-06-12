@@ -31,11 +31,11 @@ Interpretability is enhanced through **Grad-CAM** visualizations, which are vali
 
 ## 🧪 Experiments & Dataset
 
-- **Dataset**: [IU-Xray](https://openi.nlm.nih.gov/)
+- **Dataset**: [IU-Xray](https://pubmed.ncbi.nlm.nih.gov/26133894/)
   - Multi-label
   - High class imbalance
   - Small-scale
-- **Model**: [BiomedCLIP](https://github.com/microsoft/BiomedCLIP)
+- **Model**: [BiomedCLIP](https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224)
 - **Evaluation Protocols**:
   - Zero-shot
   - Linear probing (frozen encoder)
@@ -45,11 +45,15 @@ Interpretability is enhanced through **Grad-CAM** visualizations, which are vali
 
 ## 📊 Results Summary
 
-| Setting       | Precision | Recall | F1-Score | Notes                         |
-|---------------|-----------|--------|----------|-------------------------------|
-| Zero-shot     | ↓ Low     | ↑ High | ↓ Poor   | Over-predicts all labels      |
-| Linear Probe  | → Medium  | → Medium | → Medium | Overlapping feature capture   |
-| Fine-tuning   | ↑ High    | ↑ High | ↑ Best   | Strong disease separation     |
+**Overall evaluation metrics for BiomedCLIP under three settings on test set**  
+(*`zs` = zero-shot, `ft` = fine-tuning, `lp` = linear probing*)  
+🔵 **Blue = best**, 🔴 **Red = worst**, ↑/↓ indicate desired direction
+
+| Setting     | Inter-class Dist. ↑ | Intra-class Dist. ↓ | Ratio ↑ | F1 Score ↑ | Exact Match ↑ | LRAP ↑ | Coverage Error ↓ | Time (min) ↓ |
+|-------------|----------------------|-----------------------|----------|-------------|----------------|----------|---------------------|----------------|
+| *zs*        | 31.890               | 🔴 21.160             | 🔴 1.506 | 🔴 0.105    | 🔴 0.000       | 🔴 0.250 | 🔴 7.70             | —              |
+| *ft*        | 🔴 22.754            | 🔵 12.756             | 🔵 1.784 | 🔵 0.235    | 0.134          | 🔵 0.779 | 🔵 2.750            | 🔴 15.47        |
+| *lp*        | 🔵 31.894            | 21.160               | 1.507    | 0.183       | 🔵 0.143       | 0.741    | 3.077               | 6.10           |
 
 Grad-CAM results reveal differences in attention localization across the three modes, further aiding in interpretability.
 
