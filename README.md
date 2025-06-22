@@ -81,8 +81,14 @@ evaluatingBiomedClIP_IUXRAY.ipynb
 ---
 
 ## 📢 Citation
-
-Coming Soon On ArXiv
+```bash
+@article{sadman2025interpreting,
+  title={Interpreting Biomedical VLMs on High-Imbalance Out-of-Distributions: An Insight into BiomedCLIP on Radiology},
+  author={Sadman, Nafiz and Zulkernine, Farhana and Kwan, Benjamin},
+  journal={arXiv preprint arXiv:2506.14136},
+  year={2025}
+}
+```
 ---
 
 ## 👩‍⚕️ Why This Matters
